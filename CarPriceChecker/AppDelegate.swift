@@ -36,8 +36,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func createSavedVehiclesNC() -> UINavigationController {
         let savedVehiclesVC = SavedVehiclesVC()
+        let tabBarIcon = UIImage(named: "savedVehiclesTabBarIcon")
         savedVehiclesVC.title = "Saved Vehicles"
-        savedVehiclesVC.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 1)
+        savedVehiclesVC.tabBarItem = UITabBarItem(title: "Saved Vehicles", image: tabBarIcon, tag: 1)
         
         return UINavigationController(rootViewController: savedVehiclesVC)
     }
