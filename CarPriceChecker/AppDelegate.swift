@@ -17,14 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        let searchNC = UINavigationController(rootViewController: SearchVC())
+        let savedVehiclesNC = UINavigationController(rootViewController: SavedVehiclesVC())
+
+        let tabBar = UITabBarController()
+        tabBar.viewControllers = [searchNC, savedVehiclesNC]
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-        let homeViewController = ViewController()
-        homeViewController.view.backgroundColor = UIColor.red
-        window?.rootViewController = homeViewController
+        window?.rootViewController = tabBar
         window?.makeKeyAndVisible()
         
         return true
     }
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
