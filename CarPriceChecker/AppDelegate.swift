@@ -17,19 +17,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let searchNC = UINavigationController(rootViewController: SearchVC())
-        let savedVehiclesNC = UINavigationController(rootViewController: SavedVehiclesVC())
-
-        let tabBar = UITabBarController()
-        tabBar.viewControllers = [searchNC, savedVehiclesNC]
-        
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = tabBar
+        window?.rootViewController = createTabBar()
         window?.makeKeyAndVisible()
         
         return true
     }
     
+    
+    func createSearchNC() -> UINavigationController {
+        let searchVC = SearchVC()
+        searchVC.title = "Search"
+        searchVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        
+        return UINavigationController(rootViewController: searchVC)
+    }
+    
+    
+    func createSavedVehiclesNC() -> UINavigationController {
+        let savedVehiclesVC = SavedVehiclesVC()
+        savedVehiclesVC.title = "Saved Vehicles"
+        savedVehiclesVC.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 1)
+        
+        return UINavigationController(rootViewController: savedVehiclesVC)
+    }
+    
+    
+    func createTabBar() -> UITabBarController {
+        let tabBar = UITabBarController()
+        UITabBar.appearance().tintColor = #colorLiteral(red: 0.1196079227, green: 0.5807820431, blue: 0.3278646021, alpha: 1)
+        tabBar.viewControllers = [createSearchNC(), createSavedVehiclesNC()]
+        
+        return tabBar
+    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
