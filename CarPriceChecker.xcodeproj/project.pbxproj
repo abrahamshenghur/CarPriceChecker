@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5248174E2515117A00637EC4 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5248174D2515117A00637EC4 /* SearchVC.swift */; };
 		52481750251511F500637EC4 /* SavedVehiclesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5248174F251511F500637EC4 /* SavedVehiclesVC.swift */; };
+		5249C85D2516D3DF00294638 /* CPCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249C85C2516D3DF00294638 /* CPCButton.swift */; };
+		5249C85F2516E36300294638 /* CPCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249C85E2516E36300294638 /* CPCTextField.swift */; };
 		52DE780E2510B85700A4A355 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE780D2510B85700A4A355 /* AppDelegate.swift */; };
 		52DE78152510B85800A4A355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DE78142510B85800A4A355 /* Assets.xcassets */; };
 		52DE78182510B85800A4A355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DE78162510B85800A4A355 /* LaunchScreen.storyboard */; };
@@ -17,6 +19,8 @@
 /* Begin PBXFileReference section */
 		5248174D2515117A00637EC4 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		5248174F251511F500637EC4 /* SavedVehiclesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVehiclesVC.swift; sourceTree = "<group>"; };
+		5249C85C2516D3DF00294638 /* CPCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCButton.swift; sourceTree = "<group>"; };
+		5249C85E2516E36300294638 /* CPCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCTextField.swift; sourceTree = "<group>"; };
 		52DE780A2510B85700A4A355 /* CarPriceChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarPriceChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DE780D2510B85700A4A355 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52DE78142510B85800A4A355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				52DE780D2510B85700A4A355 /* AppDelegate.swift */,
+				5249C85C2516D3DF00294638 /* CPCButton.swift */,
+				5249C85E2516E36300294638 /* CPCTextField.swift */,
 				5248174D2515117A00637EC4 /* SearchVC.swift */,
 				5248174F251511F500637EC4 /* SavedVehiclesVC.swift */,
 				52DE78142510B85800A4A355 /* Assets.xcassets */,
@@ -134,6 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5249C85F2516E36300294638 /* CPCTextField.swift in Sources */,
+				5249C85D2516D3DF00294638 /* CPCButton.swift in Sources */,
 				5248174E2515117A00637EC4 /* SearchVC.swift in Sources */,
 				52DE780E2510B85700A4A355 /* AppDelegate.swift in Sources */,
 				52481750251511F500637EC4 /* SavedVehiclesVC.swift in Sources */,
