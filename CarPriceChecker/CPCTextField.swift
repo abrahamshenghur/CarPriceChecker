@@ -38,6 +38,6 @@ class CPCTextField: UITextField {
         backgroundColor             = .white
         autocorrectionType          = .no
         
-        placeholder                 = "Enter a vehcile"
+        placeholder                 = "Enter a vehicle"
     }
 }
