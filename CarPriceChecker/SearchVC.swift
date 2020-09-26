@@ -36,6 +36,15 @@ class SearchVC: UIViewController {
         view.addGestureRecognizer(tap)
     }
     
+    
+    @objc private func pushVehicleListVC() {
+        let vehicleListVC = VehiicleListVC()
+        vehicleListVC.vehicle   = vehicleTextField.text
+        vehicleListVC.title     = vehicleTextField.text
+        navigationController?.pushViewController(vehicleListVC, animated: true)
+    }
+    
+    
     private func configurLogoImageViewe() {
         view.addSubview(logoImageView)
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -46,7 +55,7 @@ class SearchVC: UIViewController {
             logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             logoImageView.heightAnchor.constraint(equalToConstant: 200),
             logoImageView.widthAnchor.constraint(equalToConstant: 200)
-            ])
+        ])
     }
     
     
@@ -59,26 +68,27 @@ class SearchVC: UIViewController {
             vehicleTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
             vehicleTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
             vehicleTextField.heightAnchor.constraint(equalToConstant: 50
-            )])
+        )])
     }
     
     
     private func configureCallToActionButton() {
         view.addSubview(callToActionButton)
+        callToActionButton.addTarget(self, action: #selector(pushVehicleListVC), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             callToActionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
             callToActionButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50),
             callToActionButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50),
             callToActionButton.heightAnchor.constraint(equalToConstant: 50)
-            ])
+        ])
     }
 }
 
 
 extension SearchVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        print("Did Tap Return")
+        pushVehicleListVC()
         return true
     }
 }
