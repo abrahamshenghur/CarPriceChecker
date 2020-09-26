@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = createTabBar()
         window?.makeKeyAndVisible()
         
+        configureNavigationBar()
+        
         return true
     }
     
@@ -50,6 +52,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabBar.viewControllers = [createSearchNC(), createSavedVehiclesNC()]
         
         return tabBar
+    }
+    
+    
+    func configureNavigationBar() {
+        UINavigationBar.appearance().tintColor = #colorLiteral(red: 0.1196079227, green: 0.5807820431, blue: 0.3278646021, alpha: 1)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

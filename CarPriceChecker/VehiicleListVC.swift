@@ -16,5 +16,6 @@ class VehiicleListVC: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         navigationController?.isNavigationBarHidden = false
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
