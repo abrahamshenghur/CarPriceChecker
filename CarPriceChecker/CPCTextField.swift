@@ -37,7 +37,7 @@ class CPCTextField: UITextField {
         
         backgroundColor             = .white
         autocorrectionType          = .no
-        
+        returnKeyType               = .go
         placeholder                 = "Enter a vehicle"
     }
 }

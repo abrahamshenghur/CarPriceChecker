@@ -21,6 +21,7 @@ class SearchVC: UIViewController {
         configurLogoImageViewe()
         configureVehicleTextField()
         configureCallToActionButton()
+        createDismissKeyboardTapGesture()
     }
     
     
@@ -29,6 +30,11 @@ class SearchVC: UIViewController {
         navigationController?.isNavigationBarHidden = true
     }
     
+    
+    private func createDismissKeyboardTapGesture() {
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
+    }
     
     private func configurLogoImageViewe() {
         view.addSubview(logoImageView)
@@ -46,6 +52,7 @@ class SearchVC: UIViewController {
     
     private func configureVehicleTextField() {
         view.addSubview(vehicleTextField)
+        vehicleTextField.delegate = self
         
         NSLayoutConstraint.activate([
             vehicleTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
@@ -65,5 +72,13 @@ class SearchVC: UIViewController {
             callToActionButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50),
             callToActionButton.heightAnchor.constraint(equalToConstant: 50)
             ])
+    }
+}
+
+
+extension SearchVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("Did Tap Return")
+        return true
     }
 }
