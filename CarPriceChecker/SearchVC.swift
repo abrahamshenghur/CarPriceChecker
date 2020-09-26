@@ -14,6 +14,8 @@ class SearchVC: UIViewController {
     let vehicleTextField    = CPCTextField()
     let callToActionButton  = CPCButton(backgroundColor: #colorLiteral(red: 0.1196079227, green: 0.5807820431, blue: 0.3278646021, alpha: 1), title: "Get Vehicles")
     
+    var isVehicleEntered: Bool { return !vehicleTextField.text!.isEmpty }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +40,11 @@ class SearchVC: UIViewController {
     
     
     @objc private func pushVehicleListVC() {
+        guard isVehicleEntered else {
+            print("NO vehicle")
+            return
+        }
+        
         let vehicleListVC = VehiicleListVC()
         vehicleListVC.vehicle   = vehicleTextField.text
         vehicleListVC.title     = vehicleTextField.text
