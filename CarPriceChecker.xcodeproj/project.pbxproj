@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		52377C62251F6CF30039BFAC /* VehiicleListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52377C61251F6CF30039BFAC /* VehiicleListVC.swift */; };
+		523E670B25228B0200F5C4E0 /* CPCTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E670A25228B0200F5C4E0 /* CPCTitleLabel.swift */; };
+		523E670D25228E0C00F5C4E0 /* CPCBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E670C25228E0C00F5C4E0 /* CPCBodyLabel.swift */; };
 		5248174E2515117A00637EC4 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5248174D2515117A00637EC4 /* SearchVC.swift */; };
 		52481750251511F500637EC4 /* SavedVehiclesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5248174F251511F500637EC4 /* SavedVehiclesVC.swift */; };
 		5249C85D2516D3DF00294638 /* CPCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249C85C2516D3DF00294638 /* CPCButton.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		52377C61251F6CF30039BFAC /* VehiicleListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiicleListVC.swift; sourceTree = "<group>"; };
+		523E670A25228B0200F5C4E0 /* CPCTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCTitleLabel.swift; sourceTree = "<group>"; };
+		523E670C25228E0C00F5C4E0 /* CPCBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCBodyLabel.swift; sourceTree = "<group>"; };
 		5248174D2515117A00637EC4 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		5248174F251511F500637EC4 /* SavedVehiclesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVehiclesVC.swift; sourceTree = "<group>"; };
 		5249C85C2516D3DF00294638 /* CPCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCButton.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				52377C61251F6CF30039BFAC /* VehiicleListVC.swift */,
+				523E670A25228B0200F5C4E0 /* CPCTitleLabel.swift */,
+				523E670C25228E0C00F5C4E0 /* CPCBodyLabel.swift */,
 				52DE780D2510B85700A4A355 /* AppDelegate.swift */,
 				5249C85C2516D3DF00294638 /* CPCButton.swift */,
 				5249C85E2516E36300294638 /* CPCTextField.swift */,
@@ -144,10 +150,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5249C85F2516E36300294638 /* CPCTextField.swift in Sources */,
+				523E670D25228E0C00F5C4E0 /* CPCBodyLabel.swift in Sources */,
 				5249C85D2516D3DF00294638 /* CPCButton.swift in Sources */,
 				5248174E2515117A00637EC4 /* SearchVC.swift in Sources */,
 				52DE780E2510B85700A4A355 /* AppDelegate.swift in Sources */,
 				52481750251511F500637EC4 /* SavedVehiclesVC.swift in Sources */,
+				523E670B25228B0200F5C4E0 /* CPCTitleLabel.swift in Sources */,
 				52377C62251F6CF30039BFAC /* VehiicleListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
