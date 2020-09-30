@@ -49,6 +49,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		527EAC272524684D006FED33 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5248174D2515117A00637EC4 /* SearchVC.swift */,
+				5248174F251511F500637EC4 /* SavedVehiclesVC.swift */,
+				52377C61251F6CF30039BFAC /* VehiicleListVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		527EAC2825246901006FED33 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				52822B8B25233E3B0028AF3E /* CPCAlertVC.swift */,
+				5249C85C2516D3DF00294638 /* CPCButton.swift */,
+				5249C85E2516E36300294638 /* CPCTextField.swift */,
+				523E670A25228B0200F5C4E0 /* CPCTitleLabel.swift */,
+				523E670C25228E0C00F5C4E0 /* CPCBodyLabel.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		527EAC2925246991006FED33 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				527EAC2525245D17006FED33 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		527EAC2A252469BE006FED33 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				52DE78142510B85800A4A355 /* Assets.xcassets */,
+				52DE780D2510B85700A4A355 /* AppDelegate.swift */,
+				52DE78162510B85800A4A355 /* LaunchScreen.storyboard */,
+				52DE78192510B85800A4A355 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		52DE78012510B85700A4A355 = {
 			isa = PBXGroup;
 			children = (
@@ -68,19 +109,10 @@
 		52DE780C2510B85700A4A355 /* CarPriceChecker */ = {
 			isa = PBXGroup;
 			children = (
-				527EAC2525245D17006FED33 /* UIViewController+Ext.swift */,
-				52377C61251F6CF30039BFAC /* VehiicleListVC.swift */,
-				523E670A25228B0200F5C4E0 /* CPCTitleLabel.swift */,
-				52822B8B25233E3B0028AF3E /* CPCAlertVC.swift */,
-				523E670C25228E0C00F5C4E0 /* CPCBodyLabel.swift */,
-				52DE780D2510B85700A4A355 /* AppDelegate.swift */,
-				5249C85C2516D3DF00294638 /* CPCButton.swift */,
-				5249C85E2516E36300294638 /* CPCTextField.swift */,
-				5248174D2515117A00637EC4 /* SearchVC.swift */,
-				5248174F251511F500637EC4 /* SavedVehiclesVC.swift */,
-				52DE78142510B85800A4A355 /* Assets.xcassets */,
-				52DE78162510B85800A4A355 /* LaunchScreen.storyboard */,
-				52DE78192510B85800A4A355 /* Info.plist */,
+				527EAC2925246991006FED33 /* Extensions */,
+				527EAC2825246901006FED33 /* Custom Views */,
+				527EAC272524684D006FED33 /* Screens */,
+				527EAC2A252469BE006FED33 /* Support */,
 			);
 			path = CarPriceChecker;
 			sourceTree = "<group>";
@@ -304,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2KYHXD8LY9;
-				INFOPLIST_FILE = CarPriceChecker/Info.plist;
+				INFOPLIST_FILE = CarPriceChecker/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2KYHXD8LY9;
-				INFOPLIST_FILE = CarPriceChecker/Info.plist;
+				INFOPLIST_FILE = CarPriceChecker/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
