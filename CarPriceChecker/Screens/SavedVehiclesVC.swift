@@ -14,5 +14,4 @@ class SavedVehiclesVC: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.green
     }
-    
 }

@@ -10,10 +10,10 @@ import UIKit
 
 class CPCAlertVC: UIViewController {
     
-    let containerView = UIView()
-    let titleLabel = CPCTitleLabel(textAlignment: .center, fontSize: 20)
-    let messageLabel = CPCBodyLabel(textAlignment: .center)
-    let actionButton = CPCButton(backgroundColor: .magenta, title: "Ok")
+    let containerView   = UIView()
+    let titleLabel      = CPCTitleLabel(textAlignment: .center, fontSize: 20)
+    let messageLabel    = CPCBodyLabel(textAlignment: .center)
+    let actionButton    = CPCButton(backgroundColor: .magenta, title: "Ok")
     
     var alertTitle: String?
     var message: String?
@@ -91,8 +91,8 @@ class CPCAlertVC: UIViewController {
     
     private func configureMessageLabel() {
         containerView.addSubview(messageLabel)
-        messageLabel.text = message ?? "Unable to complete request"
-        messageLabel.numberOfLines = 4
+        messageLabel.text           = message ?? "Unable to complete request"
+        messageLabel.numberOfLines  = 4
         
         NSLayoutConstraint.activate([
             messageLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: padding),
