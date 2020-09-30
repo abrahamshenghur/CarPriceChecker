@@ -41,7 +41,7 @@ class SearchVC: UIViewController {
     
     @objc private func pushVehicleListVC() {
         guard isVehicleEntered else {
-            print("NO vehicle")
+            presentAlertOnMainThread(title: "No Vehicle", message: "Please enter a vehicle to check current prices", buttonTitle: "Ok")
             return
         }
         
