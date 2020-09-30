@@ -14,6 +14,7 @@
 		52481750251511F500637EC4 /* SavedVehiclesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5248174F251511F500637EC4 /* SavedVehiclesVC.swift */; };
 		5249C85D2516D3DF00294638 /* CPCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249C85C2516D3DF00294638 /* CPCButton.swift */; };
 		5249C85F2516E36300294638 /* CPCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249C85E2516E36300294638 /* CPCTextField.swift */; };
+		527EAC2625245D17006FED33 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527EAC2525245D17006FED33 /* UIViewController+Ext.swift */; };
 		52822B8C25233E3B0028AF3E /* CPCAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52822B8B25233E3B0028AF3E /* CPCAlertVC.swift */; };
 		52DE780E2510B85700A4A355 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE780D2510B85700A4A355 /* AppDelegate.swift */; };
 		52DE78152510B85800A4A355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DE78142510B85800A4A355 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		5248174F251511F500637EC4 /* SavedVehiclesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVehiclesVC.swift; sourceTree = "<group>"; };
 		5249C85C2516D3DF00294638 /* CPCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCButton.swift; sourceTree = "<group>"; };
 		5249C85E2516E36300294638 /* CPCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCTextField.swift; sourceTree = "<group>"; };
+		527EAC2525245D17006FED33 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		52822B8B25233E3B0028AF3E /* CPCAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCAlertVC.swift; sourceTree = "<group>"; };
 		52DE780A2510B85700A4A355 /* CarPriceChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarPriceChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DE780D2510B85700A4A355 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		52DE780C2510B85700A4A355 /* CarPriceChecker */ = {
 			isa = PBXGroup;
 			children = (
+				527EAC2525245D17006FED33 /* UIViewController+Ext.swift */,
 				52377C61251F6CF30039BFAC /* VehiicleListVC.swift */,
 				523E670A25228B0200F5C4E0 /* CPCTitleLabel.swift */,
 				52822B8B25233E3B0028AF3E /* CPCAlertVC.swift */,
@@ -154,6 +157,7 @@
 			files = (
 				5249C85F2516E36300294638 /* CPCTextField.swift in Sources */,
 				523E670D25228E0C00F5C4E0 /* CPCBodyLabel.swift in Sources */,
+				527EAC2625245D17006FED33 /* UIViewController+Ext.swift in Sources */,
 				5249C85D2516D3DF00294638 /* CPCButton.swift in Sources */,
 				5248174E2515117A00637EC4 /* SearchVC.swift in Sources */,
 				52DE780E2510B85700A4A355 /* AppDelegate.swift in Sources */,
